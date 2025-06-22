@@ -1,0 +1,39 @@
+/* Menu Section */
+.menu-section-1 {
+    position: relative;
+    z-index: 4;
+    margin-top: 8%;
+}
+
+
+
+.menu-heading-1 {
+    text-align: center; /* Centers the text content inside */
+}
+
+.menu-subtitle-1 {
+    text-transform: uppercase;
+    display: inline-block;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    padding: 3px 20px;
+    border-radius: 60px;
+    color: #ff8243;
+    font-size: 50px;
+    
+}
+
+
+.menu-title-1 {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 700;
+    color: #333;
+}
+
+.menu-title-1 span {
+    display: block;
+}

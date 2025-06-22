@@ -1,0 +1,355 @@
+/* Menu Section */
+.menu-section-2 {
+    position: relative;
+    z-index: 4;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.menu-heading-2 {
+    text-align: center; /* Centers the text content inside */
+}
+
+.menu-subtitle-2 {
+    text-transform: uppercase;
+    display: inline-block;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    padding: 3px 20px;
+    border-radius: 60px;
+    color: #ff8243;
+    font-size: 14px;
+    
+}
+
+
+.menu-title-2 {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.menu-title-2 span {
+    display: block;
+}
+
+/* Center the entire menu section */
+.details-text-2 {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ensure the container is centered */
+.details-contains-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center the menu list */
+.details-contains-2 ul {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background: linear-gradient(145deg, #e3a92b, #ffffff);
+    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+/* Center each menu item */
+.details-list-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.details-list-2 .details-products-2 {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 26px;
+    border-radius: 30px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+/* Adjust the background indicator */
+.details-data-2 {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    min-height: 50px;
+    border-radius: 30px;
+    z-index: 1;
+    background: linear-gradient(145deg, #e3a92b, #ffc933);
+    transition: 0.3s;
+}
+
+/* Adjust icon alignment */
+.details-list-2 .details-products-2 img {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+
+/* Active menu item style */
+.details-products-2.active-2 {
+    color: #ffffff;
+}
+
+/* menu product */
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff8243;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f16620;
+}
+
+/* Dish Box */
+/* Menu List - Grid Layout */
+#menu-dish-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px; /* Adjust spacing between grid items */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px; /* Ensure it fits properly */
+    margin: 0 auto; /* Center the grid */
+}
+
+
+
+/* Dish Box - Reduce Width */
+.dish-box-2 {
+    width: 280px; /* Reduced width */
+    padding: 15px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 15px 15px 35px #d4d4d4, -15px -15px 35px #ffffff;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.dish-box-2:hover {
+    transform: scale(1.03);
+}
+
+
+/* Dish Image */
+.dist-img-2 {
+    align-items: center;
+    justify-items: center;
+}
+
+.dist-img-2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    box-shadow: 15px 15px 30px #d4d4d4, -15px -15px 30px #ffffff;
+}
+
+/* Dish Rating */
+.dish-rating-2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Dish Title */
+.dish-title-2 {
+    padding: 0 10px;
+}
+
+.dish-title-2 .h3-title {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-weight: 900;
+    color: #0d0d25;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+}
+
+/* Dish Info */
+.dish-info-2 ul, .dist-bottom-row-2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-info-2 ul li {
+    flex: 0.8;
+    text-align: center;
+}
+
+.dish-info-2 ul li:last-child {
+    border-left: 1px solid rgba(204, 204, 204, 0.3);
+}
+
+/* Dish Price & Add Button */
+.dist-bottom-row-2 ul li {
+    display: flex;
+    align-items: center;
+}
+
+.dist-bottom-row-2 ul li b {
+    font-size: 18px;
+    margin-top: 5px;
+}
+.h3-title-2{
+    font-weight: 700;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #666;
+  }
+  
+  .add-now-btn-2 {
+    width: 70px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    background: linear-gradient(145deg, #ffc954, #ffbc00);
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-now-btn-2:hover {
+    background: linear-gradient(145deg, #e3a92b, #ffc933);
+    transform: scale(1.08);
+}
+
+/* The full-screen overlay background */
+.item-detail-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(20, 20, 20, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+  
+  /* Floating popup card stays in place */
+  .item-detail-top {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+    animation: floatIn 0.4s ease-out;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    position: relative;
+  }
+  
+  .item-detail-top h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffe8c2;
+  }
+  
+  .item-detail-top img {
+    display: block;
+    margin: 0 auto 20px auto; /* Center horizontally + spacing below */
+    width: 220px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(255, 204, 102, 0.3);
+  }
+  
+  .item-detail-top p {
+    color: #fffbe6;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #ffabab;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffefc0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    transform: rotate(90deg);
+  }
+  
+  @keyframes floatIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .add-now-btn-3 {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    border: none;
+    color: #1b1b1b;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 173, 173, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .add-now-btn-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 142, 142, 0.8);
+  }
+  

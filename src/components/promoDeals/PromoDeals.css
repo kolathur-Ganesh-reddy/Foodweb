@@ -1,0 +1,115 @@
+:root{
+    --bg-color: #fffefb;
+    --text-color: #252429;
+    --main-color: #f24f04;
+    --other-color: #95949a;
+    --second-color: #616060;
+    --rr-color: #ffa50a;
+    --bb-color: #fff2de;
+    --h1-font: 5.5rem;
+    --h2-font: 3.5rem;
+    --p-font: 1rem;
+}
+
+.text-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-h3 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    padding: 10px 10px;
+    border-radius: 60px;
+    color: var(--p-font);
+    font-size: 25px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.deals-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.deal-card {
+    width: 300px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fffefb;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+.deal-card:hover {
+    transform: scale(1.1) rotateY(10deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.deal-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.deal-description {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.shop-link {
+    color: #e09b42;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.shop-link:hover {
+    transform: scale(1.1);
+    color: #ff6600;
+}
+
+.deal-card button {
+    background-color: transparent;
+    border: 2px solid #ff4d00;
+    color: #ff4d00;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    perspective: 500px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  
+  .deal-card button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, #ff4d00, #ff9900);
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+  }
+  
+  .deal-card button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .deal-card button:hover {
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 77, 0, 0.6);
+    transform: translateY(-3px) scale(1.05);
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.6);
+  }
+  

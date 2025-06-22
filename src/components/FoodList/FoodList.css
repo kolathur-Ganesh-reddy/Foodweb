@@ -1,0 +1,221 @@
+/* food-list */
+.text-h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.food-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-bottom: 2px dashed #ddd;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.food-details {
+    flex-grow: 1;
+}
+
+.food-details h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.food-details p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.food-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .food-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Modal Overlay with Fade-in Effect */
+.food-details-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+/* Modal Content with Scale and Slide-in Animation */
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    padding: 30px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    max-width: 850px;
+    text-align: center;
+    gap: 30px;
+    animation: slideIn 0.4s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.8) translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close Button with Hover Effect */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #e74c3c;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+    color: #c0392b;
+    transform: rotate(90deg) scale(1.2);
+}
+
+/* Modal Image with Bounce Effect */
+
+
+.image-1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    box-shadow: 15px 15px 30px #d4d4d4, -15px -15px 30px #ffffff;
+}
+.item-info1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.text-h2 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #0d0d25;
+    text-transform: capitalize;
+}
+.food-prices {
+    font-size: 18px;
+    color: #555;
+}
+/* Bounce Animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Text Styling */
+.modal-content h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.modal-content .food-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e74c3c;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Order Now Button with Hover and Click Effects */
+.order-btn {
+    background: #e74c3c;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: inline-block;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.order-btn:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+.order-btn:active {
+    background: #a93226;
+    transform: scale(0.95);
+}

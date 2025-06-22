@@ -1,0 +1,227 @@
+
+/* Menu Section */
+.menu-section {
+    position: relative;
+    z-index: 4;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.menu-heading {
+    text-align: center; /* Centers the text content inside */
+}
+
+.menu-subtitle {
+    text-transform: uppercase;
+    display: inline-block;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    padding: 3px 20px;
+    border-radius: 60px;
+    color: #ff8243;
+    font-size: 14px;
+    
+}
+
+
+.menu-title {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.menu-title span {
+    display: block;
+}
+
+/* Center the entire menu section */
+.details-text {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ensure the container is centered */
+.details-contains {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center the menu list */
+.details-contains ul {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background: linear-gradient(145deg, #e3a92b, #ffffff);
+    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+/* Center each menu item */
+.details-list {
+    display: flex;
+    justify-content: center;
+}
+
+.details-list .details-products {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 26px;
+    border-radius: 30px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+/* Adjust the background indicator */
+.details-data {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    min-height: 50px;
+    border-radius: 30px;
+    z-index: 1;
+    background: linear-gradient(145deg, #e3a92b, #ffc933);
+    transition: 0.3s;
+}
+
+/* Adjust icon alignment */
+.details-list .details-products img {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+
+/* Active menu item style */
+.details-products.active {
+    color: #ffffff;
+}
+
+/* menu product */
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff8243;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f16620;
+}
+
+/* Dish Box */
+/* Menu List - Grid Layout */
+#menu-dish {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px; /* Adjust spacing between grid items */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px; /* Ensure it fits properly */
+    margin: 0 auto; /* Center the grid */
+}
+
+
+
+/* Dish Box - Reduce Width */
+.dish-box {
+    width: 280px; /* Reduced width */
+    padding: 15px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 15px 15px 35px #d4d4d4, -15px -15px 35px #ffffff;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.dish-box:hover {
+    transform: scale(1.03);
+}
+
+
+/* Dish Image */
+.dist-img {
+    align-items: center;
+    justify-items: center;
+}
+
+.dist-img img {
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    border-radius: 50%;
+    max-width: 35%;
+    max-height: 35%;
+}
+
+/* Dish Rating */
+.dish-rating {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Dish Title */
+.dish-title {
+    padding: 0 10px;
+}
+
+.dish-title .h3-title {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-weight: 900;
+    color: #0d0d25;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+}
+
+/* Dish Info */
+.dish-info ul, .dist-bottom-row ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-info ul li {
+    flex: 0.8;
+    text-align: center;
+}
+
+.dish-info ul li:last-child {
+    border-left: 1px solid rgba(204, 204, 204, 0.3);
+}
+
+/* Dish Price & Add Button */
+.dist-bottom-row ul li {
+    display: flex;
+    align-items: center;
+}
+
+.dist-bottom-row ul li b {
+    font-size: 18px;
+}
+

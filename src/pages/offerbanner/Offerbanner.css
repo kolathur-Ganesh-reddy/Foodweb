@@ -1,0 +1,158 @@
+.container-2-A {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.section-4.anime-style {
+    padding: 20px 14%;
+    background: linear-gradient(135deg, #f0f0f0, #d1d8e0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-h-A {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 38px;
+    color: #2c3e50;
+    text-shadow: 1px 1px 0 #fff, 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* MAIN PROMO */
+.promo-A {
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15),
+                -8px -8px 20px rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.promo-A:hover {
+    transform: translateY(-5px);
+}
+
+.promo-text-A {
+    max-width: 50%;
+}
+
+.promo-A h2 {
+    font-size: 42px;
+    color: #34495e;
+    margin: 0;
+}
+
+.promo-A p {
+    color: #7f8c8d;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.promo-A .anime-btn {
+    background: linear-gradient(to bottom right, #00b894, #00cec9);
+    border: none;
+    color: #fff;
+    padding: 12px 26px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #00897b, 0 6px 12px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.promo-A .anime-btn:hover {
+    background: linear-gradient(to bottom right, #00cec9, #00b894);
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #00897b, 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.promo-img-A {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: rotate(-10deg);
+    transition: transform 0.3s ease;
+}
+
+.promo-img-A:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+/* DISCOUNT SECTION */
+.discount-container-A {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discount-A {
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to top left, #f5f5f5, #ffffff);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15),
+                -6px -6px 16px rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.discount-A:hover {
+    transform: translateY(-3px);
+}
+
+.discount-A img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.discount-text-A h3 {
+    color: #2c3e50;
+    font-size: 26px;
+    margin: 0;
+}
+
+.discount-text-A h4 {
+    color: #636e72;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.discount-A p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.discount-A a {
+    color: #0984e3;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.discount-A a:hover {
+    text-decoration: underline;
+}
+
+/* Themed Backgrounds */
+.discount-A.fruits {
+    background: linear-gradient(to bottom right, #f1f8e9, #ffffff);
+}
+
+.discount-A.baked {
+    background: linear-gradient(to bottom right, #fce4ec, #ffffff);
+}

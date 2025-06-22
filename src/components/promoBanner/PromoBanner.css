@@ -1,0 +1,114 @@
+.container-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+.promo {
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo-text {
+    max-width: 50%;
+}
+.promo h1 {
+    color: #ffb74d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.promo h2 {
+    color: #212121;
+    font-size: 40px;
+    margin: 0;
+}
+.promo p {
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.promo button {
+    background-color: transparent;
+    border: 1px solid #424242;
+    color: #424242;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.promo button:hover {
+    background-color: #424242;
+    color: #fff;
+}
+.promo img {
+    max-width: 40%;
+    transform: rotate(-10deg);
+}
+.promo-img{
+    border-radius: 50px;
+    width: 100%;
+    height: 70%;
+}
+/* Discount Boxes */
+.discount-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.discount {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.discount img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+.discount-text h3 {
+    color: #212121;
+    font-size: 24px;
+    margin: 0;
+}
+.discount-text h4 {
+    color: #212121;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.discount p {
+    color: #757575;
+    font-size: 16px;
+}
+.discount a {
+    color: #424242;
+    text-decoration: none;
+    font-size: 16px;
+}
+.discount a:hover {
+    text-decoration: underline;
+}
+
+/* Background Colors */
+.discount.fruits {
+    background-color: #e8f5e9;
+}
+.discount.baked {
+    background-color: #ffebee;
+}
+.text-h {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.section-1 {
+    padding: 20px 14% 20px;
+}

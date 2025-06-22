@@ -1,0 +1,45 @@
+/* SplashScreen.css */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Or your brand background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Optional: Add tailwind-like styling if you're not using Tailwind */
+.splash-logo-text {
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+}
+.text-secondary {
+  color: #FF5722; /* Replace with your secondary color */
+}
+.text-primary {
+  color: #4CAF50; /* Replace with your primary color */
+}
+.spinner-icon {
+  font-size: 2rem;
+  color: #FF5722; /* adjust to match your theme */
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

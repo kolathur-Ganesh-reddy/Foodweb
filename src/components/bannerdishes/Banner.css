@@ -1,0 +1,90 @@
+/* banner */
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+.section-2 {
+    padding: 20px 14% 20px;
+}
+.card {
+    position: relative;
+    width: 30%;
+    background: #fcf8f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+}
+
+.card p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e6a15d;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    object-fit: cover;
+}
+/* Menu Section */
+.menu-section {
+    position: relative;
+    z-index: 4;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.menu-heading {
+    text-align: center; /* Centers the text content inside */
+}
+
+.menu-subtitle {
+    text-transform: uppercase;
+    display: inline-block;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    padding: 3px 20px;
+    border-radius: 60px;
+    color: #ff8243;
+    font-size: 14px;
+    
+}
+
+
+.menu-title {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 700;
+}
+
+.menu-title span {
+    display: block;
+}
