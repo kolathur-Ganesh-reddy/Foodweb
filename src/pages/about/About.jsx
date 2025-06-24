@@ -6,7 +6,7 @@ import men from "../../assets/man1.jpg";
 import pzza from "../../assets/pzza1.jpg";
 import burgger from "../../assets/burger10.avif";
 import kebab from "../../assets/Kebab1.jpg";
-import banner from "../../assets/banner10.jpg";
+import banner from "../../assets/Banner10.jpg";
 const team = [
   {
     name: "Yuki Tanaka",
