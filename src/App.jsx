@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter  as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter  as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import PromoBanner from "./components/promoBanner/PromoBanner";
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <CartProvider>
-      <Router>
+      <Router basename="/Foodweb">
         <Navbar />
         <Routes>
           <Route path="/" element={
