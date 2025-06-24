@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-
-// Component Imports
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import PromoBanner from "./components/promoBanner/PromoBanner";
@@ -13,7 +11,7 @@ import Banner from "./components/bannerdishes/Banner";
 import FoodList from "./components/FoodList/FoodList";
 import ItemDetails from "./components/menusection/ItemDetails";
 import Offers from "./pages/offers/Offers";
-import Offerbaner from "./pages/offerbanner/offerbanner";
+import Offerbaner from "./pages/offerbanner/Offerbanner";
 import Offertitle from "./pages/offertitle/Offertitle";
 import OffersMenu from "./pages/offersmenu/OffersMenu";
 import OfferList from "./pages/offersmenu/OfferList";
@@ -22,7 +20,7 @@ import CartProvider from "./components/cart/CartContext";
 import About from "./pages/about/About";
 import Footer from "./components/footer/Footer";
 import LoginRegister from "./components/Login/LoginRegister";
-import SplashScreen from "./components/SplashScreen/SplashScreen";
+import SplashScreen from "./components/SplashScreen/SplashScreen"; // ✅ Import splash screen
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -30,100 +28,63 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // 1 second splash duration
+    }, 1000); // 3 seconds splash duration
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <SplashScreen />;
+  if (loading) return <SplashScreen />; // ✅ Show splash screen before app
 
   return (
-    <Router>
-      <CartProvider>
+    <CartProvider>
+      <Router>
         <Navbar />
-
         <Routes>
-          {/* Home Page */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <PromoBanner />
-                <MenuSection />
-                <MenuList />
-                <PromoDeals />
-                <FoodList />
-                <BannerSlider />
-                <Banner />
-                <Footer />
-              </>
-            }
-          />
-
-          {/* Offers Page */}
-          <Route
-            path="/offers"
-            element={
-              <>
-                <Offertitle />
-                <Offers />
-                <Offerbaner />
-                <OffersMenu />
-                <OfferList />
-                <Footer />
-              </>
-            }
-          />
-
-          {/* About Page */}
-          <Route
-            path="/about"
-            element={
-              <>
-                <About />
-                <Footer />
-              </>
-            }
-          />
-
-          {/* Item Details Page */}
-          <Route
-            path="/item/:name"
-            element={
-              <>
-                <ItemDetails />
-                <Footer />
-              </>
-            }
-          />
-
-          {/* Cart Page */}
-          <Route
-            path="/cart"
-            element={
-              <>
-                <Cart />
-                <Footer />
-              </>
-            }
-          />
-
-          {/* Login Page */}
+          <Route path="/" element={
+            <>
+              <Hero />
+              <PromoBanner />
+              <MenuSection />
+              <MenuList />
+              <PromoDeals />
+              <FoodList />
+              <BannerSlider />
+              <Banner />
+              <Footer />
+            </>
+          } />
+          <Route path="/offers" element={
+            <>
+              <Offertitle/>
+              <Offers/>
+              <Offerbaner/>
+              <OffersMenu/>
+              <OfferList/>
+              <Footer />
+            </>
+          }/>
+          <Route path="/about" element={
+            <>
+              <About/>
+              <Footer />
+            </>
+          }/>
+          <Route path="/item/:name" element={
+            <>
+              <ItemDetails />
+              <Footer />
+            </>
+          } />
+          <Route path="/cart" element={
+            <>
+              <Cart />
+              <Footer />
+            </>
+          } />
           <Route path="/login" element={<LoginRegister />} />
-
-          {/* Menu List (Full Menu) */}
-          <Route
-            path="/menu"
-            element={
-              <>
-                <MenuList />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/menu" element={<MenuList />} />
         </Routes>
-      </CartProvider>
-    </Router>
+      </Router>
+    </CartProvider>
   );
 };
 

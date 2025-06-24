@@ -28,23 +28,23 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 animated-navbar">
         <div className="container flex justify-between items-center pt-8 pb-4">
           {/* Logo */}
-          <Link to="/" className="text-2xl flex items-center gap-2 font-bold uppercase">
+          <div className="text-2xl flex items-center gap-2 font-bold uppercase">
             <IoFastFood />
             <p>Tasty</p>
             <p className="text-secondary">Bites</p>
-          </Link>
+          </div>
 
-          {/* Menu Items (Desktop) */}
+          {/* Menu Items */}
           <div className="hidden md:block">
             <ul className="flex items-center gap-6 text-gray-600">
               {NavbarMenu.map((item) => (
                 <li key={item.id}>
-                  <Link
-                    to={item.link}
+                  <a
+                    href={item.link}
                     className="inline-block py-1 px-3 hover:text-primary font-semibold"
                   >
                     {item.title}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -61,10 +61,10 @@ const Navbar = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="search-input"
               />
-              <CiSearch onClick={handleSearch} className="search-icon cursor-pointer" />
+              <CiSearch onClick={handleSearch} className="search-icon" />
             </form>
 
-            {/* Cart Icon */}
+            {/* Cart */}
             <Link to="/cart" className="relative">
               <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
                 <PiShoppingCart />
@@ -76,7 +76,7 @@ const Navbar = () => {
               </button>
             </Link>
 
-            {/* Login Button */}
+            {/* Login */}
             <Link
               to="/login"
               className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block"
@@ -85,14 +85,13 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Icon */}
+          {/* Mobile Menu */}
           <div className="md:hidden" onClick={() => setOpen(!open)}>
-            <IoMdMenu className="text-4xl cursor-pointer" />
+            <IoMdMenu className="text-4xl" />
           </div>
         </div>
       </nav>
 
-      {/* Mobile Menu Component */}
       <ResponsiveMenu open={open} />
     </>
   );

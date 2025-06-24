@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import women from "../../assets/women2.png";
 import chief from "../../assets/chief-1.png";
-import men from "../../assets/man1.webp";
+import men from "../../assets/man1.jpg";
 import pzza from "../../assets/pzza1.jpg";
 import burgger from "../../assets/burger10.avif";
-import kebab from "../../assets/kebab1.webp";
+import kebab from "../../assets/kebab1.jpg";
 import banner from "../../assets/banner10.jpg";
 const team = [
   {
