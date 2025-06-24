@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter  as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import PromoBanner from "./components/promoBanner/PromoBanner";
@@ -20,7 +20,7 @@ import CartProvider from "./components/cart/CartContext";
 import About from "./pages/about/About";
 import Footer from "./components/footer/Footer";
 import LoginRegister from "./components/Login/LoginRegister";
-import SplashScreen from "./components/SplashScreen/SplashScreen"; // ✅ Import splash screen
+import SplashScreen from "./components/SplashScreen/SplashScreen";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -28,11 +28,11 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // 3 seconds splash duration
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <SplashScreen />; // ✅ Show splash screen before app
+  if (loading) return <SplashScreen />;
 
   return (
     <CartProvider>
